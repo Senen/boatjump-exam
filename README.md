@@ -1,29 +1,17 @@
 # Exam
 
-TODO: Write a gem description
+Resolución del exame de BoatJump
 
 ## Installation
 
-Add this line to your application's Gemfile:
+First clone
 
-    gem 'exam'
+    git clone https://github.com/Senen/boatjump-exam.git boatjump-exam
 
 And then execute:
-
+    $ cd boatjump-exam
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install exam
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/exam/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+And then  run specs:
+  
+    $ rspec spec
