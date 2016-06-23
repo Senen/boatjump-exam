@@ -39,7 +39,8 @@ Heading.
  
 Assume that the square directly North from (x, y) is (x, y+1).
  
-**INPUT**:
+
+##**INPUT**:
 
 The first line of input is the upper-right coordinates of the plateau, the
 lower- left coordinates are assumed to be 0,0.
@@ -54,13 +55,13 @@ Each rover will be finished sequentially, which means that the
 second rover won’t start to move until the first one has finished
 Moving.
  
-**OUTPUT**
+#**OUTPUT**
 
 The output for each rover should be its final co-ordinates and
 heading.
 
 
-**Test Input**:
+##**Test Input**:
 
 5 5
 1 2 N
@@ -68,7 +69,7 @@ LMLMLMLMM
 3 3 E
 MMRMMRMRRM
 
-**Expected Output**:
+##**Expected Output**:
 
 1 3 N
 5 1 E
