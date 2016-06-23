@@ -11,6 +11,51 @@ RSpec.describe "Rover" do
     expect(rover1.y).to            eq(2)
   end
 
+  it "should ignore wrong orders" do
+    rover1.receive("ABC123")
+    expect(rover1.orientation).to  eq("N")
+    expect(rover1.x).to            eq(1)
+    expect(rover1.y).to            eq(2)    
+  end
+
+  describe "should ignore move orders" do
+
+    it "to the north when rover already at maximum North position" do
+      rover1.y = 5
+      rover1.orientation = "N"
+
+      rover1.receive("m")
+      expect(rover1.y).to eq(5)
+    
+    end
+
+    it "to the east when rover already at maximum East position" do
+      rover1.x = 5
+      rover1.orientation = "E"
+
+      rover1.receive("M")
+      expect(rover1.x).to eq(5)
+    end
+
+    it "to the south when rover already at maximum South position" do
+      rover1.y = 0
+      rover1.orientation = "S"
+
+      rover1.receive("m")
+      expect(rover1.y).to eq(0)
+    
+    end
+
+    it "to the west when rover already at maximum West position" do
+      rover1.x = 0
+
+      rover1.receive("m")
+      expect(rover1.x).to eq(0)
+    
+    end            
+
+  end  
+
   describe "receive" do
 
     let(:rover2)   { Rover.new("Rover 2", 3, 3, "E", plateau) }

@@ -1,6 +1,6 @@
 # Exam
 
-Resolución del exame de BoatJump
+Resolución del examen de BoatJump
 
 ## Installation
 
@@ -11,7 +11,7 @@ First clone
 And then execute:
 
     $ cd boatjump-exam
-    
+
     $ bundle
 
 And then  run specs:

@@ -12,11 +12,10 @@ class Rover
   end
 
   def receive(commands)
-    puts "#{@name} start position #{@x}, #{@y}, #{orientation}"
     commands.split("").each do |command|
       process(command)
     end
-    puts "#{@name} final position: #{@x}, #{@y}, #{@orientation}"
+    # puts "#{@name} final position: #{@x}, #{@y}, #{@orientation}"
   end
 
   private 
@@ -30,7 +29,7 @@ class Rover
       when "M" then 
         move
       else 
-        puts "Unknonw command ignored: #{command}"
+        # puts "Unknonw command ignored: #{command}"
       end
     end
 
