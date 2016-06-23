@@ -11,6 +11,7 @@ First clone
 And then execute:
 
     $ cd boatjump-exam
+    
     $ bundle
 
 And then  run specs:
