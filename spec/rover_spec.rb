@@ -1,7 +1,7 @@
 RSpec.describe "Rover" do
 
-  let(:plateau)  { Exam::Plateau.new(5, 5) }
-  let(:rover1)   { Exam::Rover.new("Rover 1", 1, 2, "N", plateau) }
+  let(:plateau)  { Plateau.new(5, 5) }
+  let(:rover1)   { Rover.new("Rover 1", 1, 2, "N", plateau) }
 
   subject { rover }
 
@@ -13,7 +13,7 @@ RSpec.describe "Rover" do
 
   describe "receive" do
 
-    let(:rover2)   { Exam::Rover.new("Rover 2", 3, 3, "E", plateau) }
+    let(:rover2)   { Rover.new("Rover 2", 3, 3, "E", plateau) }
 
     it "should receive and process each instruction" do
       rover1.receive("LMLMLMLMM")
