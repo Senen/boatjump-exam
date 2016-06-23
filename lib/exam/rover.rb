@@ -1,5 +1,3 @@
-require "exam/version"
-
 class Rover
 
   attr_accessor :x, :y, :orientation, :plateau
